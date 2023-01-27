@@ -1,11 +1,10 @@
 {
-  "name": "{{projectName}}",
+  "name": "Sedona-adaptive",
   "private": true,
-  "description": "Личный проект «{{projectTitle}}» от HTML Academy",
+  "description": "Личный проект VolkovCode от HTML Academy",
   "devDependencies": {
-    "@htmlacademy/editorconfig-cli": "1.0.0",
-    "stylelint": "13.13.1",
-    "stylelint-config-htmlacademy": "0.1.10"
+    "@htmlacademy/editorconfig-cli": "github:htmlacademy/editorconfig-cli",
+    "stylelint-config-htmlacademy": "^1.1.4"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
@@ -18,5 +17,8 @@
   ],
   "engines": {
     "node": "^12 || ^14"
+  },
+  "dependencies": {
+    "stylelint": "^13.13.1"
   }
 }
