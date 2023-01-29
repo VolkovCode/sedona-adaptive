@@ -1,0 +1,76 @@
+.advantages {
+  padding-top: 32px;
+  text-align: center;
+}
+
+.advantages__slogan {
+  font-weight: bold;
+  font-size: 21px;
+  margin: 0 0 0 26px;
+}
+
+.advantages__text {
+  margin: 0 0 0 11px;
+}
+
+.advantages__list {
+  list-style: none;
+}
+
+.advantages__title {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0 0 0 21px;
+
+}
+
+.advantages__description {
+  margin: 0;
+  padding-bottom: 39px;
+}
+
+.advantages__item--pic {
+  position: relative;
+}
+
+
+.advantages__item--pic::after {
+  display: block;
+  content: "";
+  width: 320px;
+  height: 260px;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  outline: red 1px solid;
+}
+
+.advantages__item--pic:first-child::after {
+  background-image: url("../img/mobile/mobile-photo-city.png");
+}
+
+.advantages__item--pic:nth-child(2)::after {
+  background-image: url("../img/mobile/mobile-photo-bridge.png");
+}
+
+.advantages__item {
+  padding-top: 25px;
+}
+
+.advantages__item:first-child {
+  color: $white;
+  background-color: $blue;
+}
+
+.advantages__item:nth-child(2) {
+  color: $white;
+  background-color: $blue;
+}
+
+.advantages__item:nth-child(3),
+.advantages__item:nth-child(4),
+.advantages__item:nth-child(5) {
+  background-color: $grey;
+}
+
+
+
