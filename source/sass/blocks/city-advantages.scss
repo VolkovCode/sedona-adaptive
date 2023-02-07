@@ -5,60 +5,53 @@
   text-align: left;
   font-size: 18px;
   padding: 35px 0 35px 50px;
+}
 
- }
+@media (min-width: $tablet-width) {
+  .city-advantages__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 
- .city-advantages__item:not(:last-child) {
-   padding-bottom: 26px;
- }
+.city-advantages__item:not(:last-child) {
+  padding-bottom: 26px;
+}
 
- .city-advantages__title {
-   font-size: 18px;
-   margin: 0;
-   padding-bottom: 21px;
- }
+.city-advantages__title {
+  font-size: 18px;
+  margin: 0;
+  padding-bottom: 21px;
+}
 
- .city-advantages__item p {
-   margin: 0;
-   font-size: 14px;
-   line-height: 21px;
- }
+.city-advantages__item p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 21px;
+}
 
-.city-advantages__item--lodging,
-.city-advantages__item--souvenir,
-.city-advantages__item--food {
+.city-advantages__item {
   position: relative;
- }
+}
 
-.city-advantages__item--lodging::before {
+.city-advantages__item::before {
   content: "";
-  display: block;
   position: absolute;
-  width: 39px;
-  height: 37px;
-  background-image: url("../img/mobile/icon-house.svg");
+  width: 40px;
+  height: 38px;
+  background-repeat: no-repeat;
   top: -10px;
   left: -48px;
 }
 
+.city-advantages__item--lodging::before {
+  background-image: url("../img/city-advantages/icon-house.svg");
+}
+
 .city-advantages__item--souvenir::before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 32px;
-  height: 38px;
-  background-image: url("../img/mobile/icon-gift.svg");
-  top: -10px;
-  left: -45px;
+  background-image: url("../img/city-advantages/icon-gift.svg");
 }
 
 .city-advantages__item--food::before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 40px;
-  height: 35px;
-  background-image: url("../img/mobile/icon-burger.svg");
-  top: -7px;
-  left: -52px;
+  background-image: url("../img/city-advantages/icon-burger.svg");
 }

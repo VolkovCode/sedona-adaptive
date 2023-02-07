@@ -15,13 +15,21 @@
 
 .advantages__list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .advantages__title {
   font-weight: bold;
   font-size: 18px;
   margin: 0 0 0 21px;
-
 }
 
 .advantages__description {
@@ -29,48 +37,45 @@
   padding-bottom: 39px;
 }
 
-.advantages__item--pic {
-  position: relative;
+.advantages__item {
+  padding-top: 25px;
+  background-color: $grey;
 }
 
+.advantages__item--pic {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  color: $white;
+  background-color: $blue;
+}
+
+.advantages__city {
+  grid-column: 1 / -1;
+  order: 3;
+}
+
+
+@media (min-width: $tablet-width) {
+  .advantages__item--pic {
+    grid-column: span 3;
+  }
+}
 
 .advantages__item--pic::after {
   display: block;
   content: "";
-  width: 320px;
-  height: 260px;
+  width: 512px;
+  height: 256px;
   background-repeat: no-repeat;
   background-position: center bottom;
-  outline: red 1px solid;
+  grid-column: span 2;
 }
 
 .advantages__item--pic:first-child::after {
-  background-image: url("../img/mobile/mobile-photo-city.png");
+  background-image: url("../img/photo-city-1x.jpg");
 }
 
 .advantages__item--pic:nth-child(2)::after {
-  background-image: url("../img/mobile/mobile-photo-bridge.png");
+  background-image: url("../img/photo-bridge-1x.jpg");
+  order: -1;
 }
-
-.advantages__item {
-  padding-top: 25px;
-}
-
-.advantages__item:first-child {
-  color: $white;
-  background-color: $blue;
-}
-
-.advantages__item:nth-child(2) {
-  color: $white;
-  background-color: $blue;
-}
-
-.advantages__item:nth-child(3),
-.advantages__item:nth-child(4),
-.advantages__item:nth-child(5) {
-  background-color: $grey;
-}
-
-
-
