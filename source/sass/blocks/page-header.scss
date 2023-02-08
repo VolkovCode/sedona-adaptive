@@ -1,25 +1,74 @@
 .page-header {
   background-color: $white;
-  background-image: url("../img/back-mobile.jpg");
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  padding-bottom: 389px;
+  position: relative;
 }
 
-.page-header__logo {
-  outline: 2px solid red;
-  position: absolute;
-  left: calc(50% - 51px);
+.page-header__main-image {
+  position: relative;
+  height: 158px;
+  background-image: url("../img/intro-triangle.svg"), url("../img/back/back-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 100%;
+  background-size: 1200px 57px, cover;
+  padding-top: 52px;
+  text-align: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/intro-triangle.svg"), url("../img/back/back-mobile@2x.jpg");
+  }
+}
+
+.page-header__main-image--index {
+  height: 389px;
+  background-size: 1200px 57px, cover;
+  padding-top: 90px;
+  text-align: center;
 }
 
 @media (min-width: $tablet-width) {
+  .page-header__main-image {
+    height: 290px;
+    background-image: url("../img/intro-triangle.svg"), url("../img/back/back-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/intro-triangle.svg"), url("../img/back/back-desktop@2x.jpg");
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__main-image--index {
+    height: 518px;
+    padding-top: 80px;
+  }
+
   .page-header__logo {
     height: 84px;
+  }
+
+  .page-header__main-image .page-header__welcome-title {
+    width: 460px;
+    height: 78px;
+    margin-top: 45px;
+  }
+
+  .page-header__main-image--index .page-header__welcome-title {
+    height: 350px;
+    margin-top: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header__logo {
     height: 97px;
+  }
+
+  .page-header__main-image {
+    height: 303px;
+  }
+
+  .page-header__main-image .page-header__welcome-title {
+    margin-top: 52px;
   }
 }

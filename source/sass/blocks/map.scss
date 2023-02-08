@@ -1,0 +1,41 @@
+.map {
+  margin: 0;
+}
+
+.map iframe {
+  width: 100%;
+  height: 350px;
+  background-image: url("../img/map/map-mobile.jpg");
+  border: none;
+}
+
+@media (min-resolution: 2dppx) {
+  .map iframe {
+    background-image: url("../img/map/map-mobile@2x.jpg");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .map iframe {
+    background-image: url("../img/map/map-tablet.jpg");
+  }
+}
+
+@media (min-width: $tablet-width) and (min-resolution: 2dppx) {
+  .map iframe {
+    background-image: url("../img/map/map-tablet@2x.jpg");
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .map iframe {
+    background-image: url("../img/map/map-desktop.jpg");
+  }
+}
+
+@media (min-width: $desktop-width) and (min-resolution: 2dppx) {
+  .map iframe {
+    background-image: url("../img/map/map-desktop@2x.jpg");
+  }
+}

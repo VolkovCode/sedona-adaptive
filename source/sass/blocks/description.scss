@@ -8,11 +8,17 @@
 .description__title {
   font-weight: bold;
   font-size: 21px;
-  margin: 0;
   padding-bottom: 26px;
 }
 
 .description__text {
   line-height: 24px;
-  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .description__title,
+  .description__text {
+    width: 434px;
+    margin: 0 auto;
+  }
 }

@@ -1,12 +1,36 @@
 .copyright {
   display: flex;
   flex-wrap: nowrap;
+  justify-content: center;
   align-items: center;
-  margin-top: 40px;
-  margin-bottom: 23px;
+}
+
+@media (max-width: $mobile-width-only) {
+  .copyright {
+    margin-top: 40px;
+    margin-bottom: 23px;
+  }
 }
 
 .copyright__item {
   margin: 0;
   margin-right: 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright__item {
+    margin-right: 11px;
+  }
+}
+
+.copyright__link svg {
+  vertical-align: middle;
+}
+
+.copyright__link:hover path {
+  fill: $blue;
+}
+
+.copyright__link:active {
+  opacity: 0.3;
 }

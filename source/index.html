@@ -4,16 +4,21 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
 <div class="page__wrapper">
   <header class="page-header">
-    <a class="page-header__logo">
-      <img src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип Sedona">
-    </a>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <a class="main-nav__logo">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="../../../../img/logotype-desktop.svg">
+          <source media="(min-width: 768px)" srcset="../../../../img/logotype-tablet.svg">
+          <img src="../../../../img/logotype-mobile.svg" width="102" height="84" alt="Логотип Sedona">
+        </picture>
+      </a>
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
@@ -32,6 +37,10 @@
         </li>
       </ul>
     </nav>
+    <div class="page-header__main-image page-header__main-image--index">
+      <img class="page-header__welcome-title" src="../../../../img/back/text-index.svg" width="282" height="214"
+           alt="Надпись Добро пожаловать">
+    </div>
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Sedona - сайт для туристов</h1>
@@ -54,7 +63,7 @@
               </li>
               <li class="city-advantages__item city-advantages__item--souvenir">
                 <h5 class="city-advantages__title">Сувениры</h5>
-                <p>Не только китайского, но и местного производства!</p>
+                <p>Не только китайского,<br class="city-advantages__hide" /> но и местного производства!</p>
               </li>
               <li class="city-advantages__item city-advantages__item--food">
                 <h5 class="city-advantages__title">Еда</h5>
@@ -65,7 +74,7 @@
         </li>
         <li class="advantages__item advantages__item--pic">
           <div class="advantages__wrapper">
-            <h3 class="advantages__title">Там есть мост дьявола</h3>
+            <h3 class="advantages__title">Там есть мост&nbsp;дьявола</h3>
             <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           </div>
         </li>
@@ -75,7 +84,8 @@
         </li>
         <li class="advantages__item">
           <h3 class="advantages__title">Красивая дорога</h3>
-          <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          <p class="advantages__description">Ехать в Седону из <span class="nowrap">Лас-Вегаса</span> совсем
+            не&nbsp;скучно!</p>
         </li>
         <li class="advantages__item">
           <h3 class="advantages__title">Мало туристов</h3>
@@ -86,12 +96,15 @@
     <section class="search">
       <h2 class="visually-hidden">Поиск гостиницы</h2>
       <p class="search__title">Заинтересовались?</p>
-      <p class="search__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
+      <p class="search__description">Укажите предполагаемые даты поездки,<br class="search__hide" /> и мы
+        покажем вам лучшие предложения
         гостиниц в Седоне</p>
-      <a class="search__button button" href="blank.html">Найти гостиницу</a>
+      <a class="button search__button" href="blank.html">Найти гостиницу</a>
     </section>
     <section class="map">
-
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d842888.6292958686!2d-112.11734717389112!3d34.38777808793203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1588185121138!5m2!1sru!2sru"
+        width="1200" height="350" id="state-map"></iframe>
     </section>
   </main>
   <footer class="page-footer">
@@ -119,11 +132,18 @@
     <div class="page-footer__item copyright">
       <p class="copyright__item">Разработано</p>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Академии">
+        <svg width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"
+            fill="black" />
+        </svg>
       </a>
     </div>
   </footer>
 </div>
+
+<script src="../../../../js/navigation.js"></script>
+
 </body>
 
 </html>
