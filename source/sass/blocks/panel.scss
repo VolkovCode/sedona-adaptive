@@ -1,0 +1,147 @@
+.panel__bar {
+  display: block;
+  width: 280px;
+  height: 45px;
+  background-color: rgba($black, 0.6);
+  position: relative;
+  margin: 0 auto;
+  margin-top: -45px;
+}
+
+@media (min-width: $tablet-width) {
+  .panel__bar {
+    width: 440px;
+    height: 93px;
+    background-color: transparent;
+    //background-color: rgba(yellow, 0.3);
+    margin-top: -93px;
+    margin-left: 71px;
+    z-index: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .panel__bar {
+    width: 590px;
+  }
+}
+
+.panel__handle {
+  display: block;
+  width: 235px;
+  height: 3px;
+  background-color: rgba($white, 0.2);
+  position: absolute;
+  top: 22px;
+  left: 22px;
+}
+
+.panel__handle::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: $white;
+  border-radius: 50%;
+  position: absolute;
+  top: -4px;
+  left: 36px;
+}
+
+@media (min-width: $tablet-width) {
+  .panel__handle {
+    width: 389px;
+    top: calc(50% - 1px);
+    left: 20px;
+  }
+
+  .panel__handle::before {
+    left: 29%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .panel__handle {
+    width: 540px;
+  }
+
+  .panel__handle::before {
+    left: 21%;
+  }
+}
+
+.panel__buttons {
+  display: flex;
+  align-items: center;
+  width: 280px;
+  height: 66px;
+  background-color: $grey-200;
+  position: relative;
+  margin: 0 auto;
+  padding-left: 6px;
+  padding-right: 7px;
+}
+
+@media (min-width: $tablet-width) {
+  .panel__buttons {
+    width: 648px;
+    height: 93px;
+    margin-top: -93px;
+    padding-left: 18px;
+    padding-right: 26px;
+    background-color: rgba($black, 0.6);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .panel__buttons {
+    width: 800px;
+  }
+}
+
+.panel__button {
+  border: none;
+  padding: 0;
+  width: 52px;
+  height: 52px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .panel__button path {
+    fill: $white;
+  }
+}
+
+.panel__button--play {
+  margin-right: auto;
+}
+
+.panel__button svg {
+  color: $grey-600;
+}
+
+.panel__button:hover svg,
+.panel__button:focus svg {
+  color: $grey-700;
+}
+
+.panel__button:active svg {
+  color: rgba($grey-700, 0.3);
+}
+
+@media (min-width: $tablet-width) {
+  .panel__button svg {
+    color: $white;
+  }
+
+  .panel__button:hover svg,
+  .panel__button:focus svg {
+    color: rgba($white, 0.6);
+  }
+
+  .panel__button:active svg {
+    color: rgba($white, 0.3);
+  }
+}

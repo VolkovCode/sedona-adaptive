@@ -1,0 +1,58 @@
+.field {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.field__input {
+  background-color: $grey-200;
+  border: none;
+  padding: 18px 22px 14px 22px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  width: 150px;
+  flex-grow: 1;
+}
+
+.field__input::placeholder {
+  color: $black;
+}
+
+.field__input--telephone {
+  background-image: url("../img/icon/phone.svg"), linear-gradient(to left, $grey-250 58px, transparent 58px);
+  background-repeat: no-repeat;
+  background-position: right 20px top 50%, 0 0;
+  padding-right: 58px;
+}
+
+.field__input--email {
+  background-image: url("../img/icon/mail.svg"), linear-gradient(to left, $grey-250 58px, transparent 58px);
+  background-repeat: no-repeat;
+  background-position: right 20px top 50%, 0 0;
+  padding-right: 58px;
+}
+
+.field__label {
+  margin-right: 14px;
+}
+
+.field--contacts .field__label {
+  margin-left: 22px;
+  margin-bottom: 8px;
+}
+
+@media (max-width: $tablet-width-only) {
+  .field--contacts .field__input {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .field--contacts .field__label {
+    margin-left: 0;
+    margin-right: 18px;
+    margin-bottom: 0;
+  }
+}

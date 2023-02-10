@@ -1,0 +1,122 @@
+.form-list {
+  border: none;
+}
+
+.form-list--impression {
+  padding-bottom: 17px;
+}
+
+@media (min-width: $tablet-width) {
+  .form-list--impression {
+    padding-bottom: 31px;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .form-list--impression .form-list__title {
+    text-align: start;
+    margin-bottom: 55px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-list--impression .form-list__title {
+    padding-left: 80px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form-list--impression {
+    order: -1;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form-list--impression::after {
+    content: "";
+    right: 0;
+    bottom: 52px;
+    top: -80px;
+    width: 1px;
+    background-color: $grey-230;
+    position: absolute;
+  }
+}
+
+.form-list__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: none;
+}
+
+.form-list--attractions {
+  padding-bottom: 3px;
+}
+
+@media (min-width: $tablet-width) {
+  .form-list--attractions {
+    padding-bottom: 21px;
+    grid-column: span 2;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-list--attractions {
+    padding-bottom: 44px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form-list--attractions .form-list__list {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    justify-content: center;
+    column-gap: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-list--attractions .form-list__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0;
+    column-gap: 50px;
+  }
+}
+
+.form-list__item {
+  position: relative;
+  margin-bottom: 9px;
+}
+
+@media (min-width: $tablet-width) {
+  .form-list__item {
+    margin-bottom: 18px;
+  }
+}
+
+.form-list--attractions .form-list__item {
+  margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .form-list--attractions .form-list__item {
+    margin-bottom: 27px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-list--attractions .form-list__item {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form-list--attractions .form-list__title {
+    margin-bottom: 41px;
+  }
+}

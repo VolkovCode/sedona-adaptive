@@ -1,11 +1,12 @@
 .page-footer {
   text-align: center;
-  padding-top: 30px;
+  padding-top: 77px;
 }
 
 @media (min-width: $tablet-width) {
   .page-footer {
     padding-bottom: 36px;
+    padding-top: 30px;
   }
 }
 
@@ -14,6 +15,12 @@
     padding-top: 29px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    padding-top: 28px;
   }
 }
 

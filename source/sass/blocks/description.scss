@@ -1,24 +1,60 @@
 .description {
   text-align: center;
-  padding-top: 36px;
-  padding-bottom: 16px;
+  padding-top: 38px;
+  padding-bottom: 17px;
+  margin: 0;
+}
+
+.description--photo {
+  padding-top: 33px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
 }
 
 
+@media (min-width: $tablet-width) {
+  .description {
+    padding-top: 65px;
+    padding-bottom: 67px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .description {
+    padding-top: 112px;
+    padding-bottom: 40px;
+  }
+
+  .description--photo {
+    padding-top: 100px;
+    padding-bottom: 59px;
+  }
+}
+
 .description__title {
   font-weight: bold;
-  font-size: 21px;
-  padding-bottom: 26px;
+  font-size: 18px;
+  padding-bottom: 27px;
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .description__title {
+    font-size: 30px;
+    padding-bottom: 32px;
+  }
 }
 
 .description__text {
   line-height: 24px;
+  margin: 0;
 }
 
 @media (min-width: $tablet-width) {
   .description__title,
   .description__text {
-    width: 434px;
+    width: 435px;
     margin: 0 auto;
   }
 }

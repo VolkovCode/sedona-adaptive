@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicon/152.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicon/16.png">
+  <link rel="apple-touch-icon" href="img/favicon/32.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<svg style="display: none;">
+  <symbol width="16" height="20" viewBox="0 0 16 20" fill="currentColor" id="replay">
+    <path
+      d="M8 4V0L3 5L8 10V6C11.3 6 14 8.7 14 12C14 15.3 11.3 18 8 18C4.7 18 2 15.3 2 12H0C0 16.4 3.6 20 8 20C12.4 20 16 16.4 16 12C16 7.6 12.4 4 8 4Z" />
+  </symbol>
+  <symbol width="32" height="20" viewBox="0 0 32 20" fill="currentColor" id="subtitles">
+    <path
+      d="M29 0H3C1.3 0 0 1.3 0 3V17C0 18.7 1.3 20 3 20H29C30.7 20 32 18.7 32 17V3C32 1.3 30.7 0 29 0ZM14.4 15.9C13.9 16 13.3 16 12.7 16C12 16 11.3 15.9 10.7 15.7C10.1 15.5 9.5 15.1 9.1 14.7C8.7 14.3 8.3 13.6 8 12.8C7.7 12 7.6 11.1 7.6 10C7.6 8.9 7.8 7.9 8.1 7.1C8.4 6.3 8.8 5.7 9.3 5.2C9.8 4.7 10.4 4.4 11 4.2C11.5 4.1 12.2 4 12.8 4C13.5 4 14 4 14.5 4.1C15 4.2 15.3 4.3 15.6 4.4L15.2 6.3C14.9 6.2 14.6 6.1 14.3 6C13.9 6 13.5 6 13 6C12.1 6 11.4 6.3 10.8 7C10.2 7.7 10 8.7 10 10C10 10.6 10.1 11.1 10.2 11.6C10.3 12.1 10.5 12.5 10.8 12.9C11.1 13.2 11.4 13.5 11.8 13.7C12.2 13.9 12.7 14 13.2 14C13.7 14 14.1 14 14.5 13.9C14.8 13.8 15.1 13.7 15.4 13.5L15.9 15.3C15.4 15.6 14.9 15.7 14.4 15.9ZM23.1 15.9C22.6 16 22 16 21.4 16C20.7 16 20 15.9 19.4 15.7C18.8 15.5 18.2 15.1 17.8 14.7C17.3 14.2 16.9 13.6 16.7 12.8C16.4 12 16.3 11.1 16.3 10C16.3 8.9 16.5 7.9 16.8 7.1C17.1 6.3 17.5 5.7 18 5.2C18.5 4.7 19.1 4.4 19.7 4.2C20.2 4.1 20.9 4 21.5 4C22.2 4 22.7 4 23.2 4.1C23.7 4.2 24 4.3 24.3 4.4L23.9 6.3C23.6 6.2 23.3 6.1 23 6C22.6 6 22.2 6 21.7 6C20.8 6 20.1 6.3 19.5 7C18.9 7.7 18.7 8.7 18.7 10C18.7 10.6 18.8 11.1 18.9 11.6C19 12.1 19.2 12.5 19.5 12.9C19.8 13.2 20.1 13.5 20.5 13.7C20.9 13.9 21.4 14 21.9 14C22.4 14 22.8 14 23.2 13.9C23.5 13.8 23.8 13.7 24.1 13.5L24.6 15.3C24.1 15.6 23.6 15.7 23.1 15.9Z" />
+  </symbol>
+  <symbol width="20" height="20" viewBox="0 0 20 20" fill="currentColor" id="fullscreen">
+    <path d="M0 0V3V6H3V3H6V0H3H0Z" />
+    <path d="M3 14H0V17V20H3H6V17H3V14Z" />
+    <path d="M17 0H14V3H17V6H20V3V0H17Z" />
+    <path d="M17 17H14V20H17H20V17V14H17V17Z" />
+  </symbol>
+</svg>
+
+<body class="page__body">
+<div class="page__wrapper">
+  <header class="page-header">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <a class="main-nav__logo" href="index.html">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+          <img src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип Sedona">
+        </picture>
+      </a>
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a href="index.html">Главная</a>
+        </li>
+        <li class="main-nav__item main-nav__item--current">
+          <a>Фото и видео</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="form.html">Форма отзыва</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#">HTML ACADEMY</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="page-header__main-image">
+      <img class="page-header__welcome-title" src="img/back/text-index-short.svg" width="229" height="39"
+           alt="Надпись Добро пожаловать">
+    </div>
+  </header>
+  <main class="page-main">
+    <section class="description description--photo">
+      <h1 class="description__title">Фото и видео</h1>
+      <p class="description__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
+        политике и экономике.</p>
+    </section>
+    <section class="gallery">
+      <h2 class="visually-hidden">Список фото</h2>
+      <ul class="gallery__list">
+        <li class="gallery__item">
+          <a href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                      srcset="img/gallery/photo-1-desktop.webp 1x, img/gallery/photo-1-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/gallery/photo-1-tablet.webp 1x, img/gallery/photo-1-tablet@2x.webp 2x">
+              <source type="image/webp"
+                      srcset="img/gallery/photo-1-mobile.webp 1x, img/gallery/photo-1-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1200px)"
+                      srcset="img/gallery/photo-1-desktop.jpg 1x, img/gallery/photo-1-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                      srcset="img/gallery/photo-1-tablet.jpg 1x, img/gallery/photo-1-tablet@2x.jpg 2x">
+              <img class="gallery__img" src="/img/gallery/photo-1-mobile.jpg"
+                   srcset="img/gallery/photo-1-mobile@2x.jpg 2x" width="280" height="280" alt="Закат на въезде в город">
+            </picture>
+          </a>
+          <div class="gallery__wrapper">
+            <p class="gallery__name">
+              <strong>Неродные просторы</strong><br />Автор фото: Борис
+            </p>
+            <p class="gallery__likes">
+              <svg width="23" height="21" viewBox="0 0 23 21" aria-hidden="true">
+                <path
+                  d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"
+                  fill="currentColor" />
+              </svg>
+              1350
+            </p>
+          </div>
+        </li>
+        <li class="gallery__item">
+          <a href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                      srcset="img/gallery/photo-2-desktop.webp 1x, img/gallery/photo-2-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/gallery/photo-2-tablet.webp 1x, img/gallery/photo-2-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-2-mobile.webp 1x, img/photo-2-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1200px)"
+                      srcset="img/gallery/photo-2-desktop.jpg 1x, img/gallery/photo-2-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                      srcset="img/gallery/photo-2-tablet.jpg 1x, img/gallery/photo-2-tablet@2x.jpg 2x">
+              <img class="gallery__img" src="/img/gallery/photo-2-mobile.jpg"
+                   srcset="img/gallery/photo-2-mobile@2x.jpg 2x" width="280" height="280"
+                   alt="Цветущие кактусы на фоне гор">
+            </picture>
+          </a>
+          <div class="gallery__wrapper">
+            <p class="gallery__name">
+              <strong>Местная растительность</strong><br />Автор фото: Сергей
+            </p>
+            <p class="gallery__likes">
+              <svg width="23" height="21" viewBox="0 0 23 21" aria-hidden="true">
+                <path
+                  d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"
+                  fill="currentColor" />
+              </svg>
+              143
+            </p>
+          </div>
+        </li>
+        <li class="gallery__item">
+          <a href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                      srcset="img/gallery/photo-3-desktop.webp 1x, img/gallery/photo-3-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/gallery/photo-3-tablet.webp 1x, img/gallery/photo-3-tablet@2x.webp 2x">
+              <source type="image/webp"
+                      srcset="img/gallery/photo-3-mobile.webp 1x, img/gallery/photo-3-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1200px)"
+                      srcset="img/gallery/photo-3-desktop.jpg 1x, img/gallery/photo-3-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                      srcset="img/gallery/photo-3-tablet.jpg 1x, img/gallery/photo-3-tablet@2x.jpg 2x">
+              <img class="gallery__img" src="/img/gallery/photo-3-mobile.jpg"
+                   srcset="img/gallery/photo-3-mobile@2x.jpg 2x" width="280" height="280" alt="Горная тропа">
+            </picture>
+          </a>
+          <div class="gallery__wrapper">
+            <p class="gallery__name">
+              <strong>Дорога на север</strong><br />Автор фото: Петр
+            </p>
+            <p class="gallery__likes">
+              <svg width="23" height="21" viewBox="0 0 23 21" aria-hidden="true">
+                <path
+                  d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"
+                  fill="currentColor" />
+              </svg>
+              96
+            </p>
+          </div>
+        </li>
+        <li class="gallery__item">
+          <a href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                      srcset="img/gallery/photo-4-desktop.webp 1x, img/gallery/photo-4-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/gallery/photo-4-tablet.webp 1x, img/gallery/photo-4-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/gallery/photo-4-mobile.webp 1x, img/photo-4-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1200px)"
+                      srcset="img/gallery/photo-4-desktop.jpg 1x, img/gallery/photo-4-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                      srcset="img/gallery/photo-4-tablet.jpg 1x, img/gallery/photo-4-tablet@2x.jpg 2x">
+              <img class="gallery__img" src="/img/gallery/photo-4-mobile.jpg"
+                   srcset="img/gallery/photo-4-mobile@2x.jpg 2x" width="280" height="280" alt="Каменный мост">
+            </picture>
+          </a>
+          <div class="gallery__wrapper">
+            <p class="gallery__name">
+              <strong>Мост дьявола</strong><br />Автор фото: Антон
+            </p>
+            <p class="gallery__likes">
+              <svg width="23" height="21" viewBox="0 0 23 21" aria-hidden="true">
+                <path
+                  d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"
+                  fill="currentColor" />
+              </svg>
+              254
+            </p>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="page-main__video-gallery video-gallery">
+      <div class="video-gallery__description description">
+        <h2 class="description__title">Все еще сомневаетесь?</h2>
+        <p class="description__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
+          очередной
+          раз!</p>
+      </div>
+      <picture>
+        <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/gallery/video-desktop.webp 1x, img/gallery/video-desktop@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/gallery/video-tablet.webp 1x, img/gallery/video-tablet@2x.webp 2x">
+        <source type="image/webp" srcset="img/gallery/video-mobile.webp 1x, img/gallery/video-mobile@2x.webp 2x">
+
+        <source media="(min-width: 1200px)"
+                srcset="img/gallery/video-desktop.jpg 1x, img/gallery/video-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)"
+                srcset="img/gallery/video-tablet.jpg 1x, img/gallery/video-tablet@2x.jpg 2x">
+        <img class="video-gallery__img" src="/img/gallery/video-mobile.jpg"
+             srcset="img/gallery/video-mobile@2x.jpg 2x" width="320" height="200" alt="Видео о Седоне">
+      </picture>
+      <div class="video-gallery__panel panel">
+        <div class="panel__bar">
+          <div class="panel__handle" tabindex="0"></div>
+        </div>
+        <div class="panel__buttons">
+          <button class="panel__button panel__button--play" type="button">
+            <span class="visually-hidden">Повторить</span>
+            <svg width="16" height="20" viewBox="0 0 16 20">
+              <use xlink:href="#replay"></use>
+            </svg>
+          </button>
+          <button class="panel__button panel__button--subtitles" type="button">
+            <span class="visually-hidden">Подключить субтитры</span>
+            <svg width="32" height="20" viewBox="0 0 32 20">
+              <use xlink:href="#subtitles"></use>
+            </svg>
+          </button>
+          <button class="panel__button panel__button--fullscreen" type="button">
+            <span class="visually-hidden">Развернуть на весь экран</span>
+            <svg width="20" height="20" viewBox="0 0 20 20">
+              <use xlink:href="#fullscreen"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <p class="page-footer__item">#visitSEDONA</p>
+    <div class="page-footer__social social">
+      <h2 class="visually-hidden">Давайте дружить!</h2>
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="#">
+            <span class="visually-hidden">Твиттер</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--fb" href="#">
+            <span class="visually-hidden">Фейсбук</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="#">
+            <span class="visually-hidden">канал на YouTube</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__item copyright">
+      <p class="copyright__item">Разработано</p>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <svg width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"
+            fill="black" />
+        </svg>
+      </a>
+    </div>
+  </footer>
+</div>
+
+<script src="js/navigation.js"></script>
+
+</body>
+
+</html>

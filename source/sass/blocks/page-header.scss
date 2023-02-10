@@ -68,7 +68,15 @@
     height: 303px;
   }
 
+  .page-header__main-image--index {
+    height: 518px;
+  }
+
   .page-header__main-image .page-header__welcome-title {
     margin-top: 52px;
+  }
+
+  .page-header__main-image--index .page-header__welcome-title {
+    margin-top: 0;
   }
 }

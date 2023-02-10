@@ -1,0 +1,138 @@
+.form-review {
+  padding-bottom: 48px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media (max-width: $mobile-width-only) {
+  .form-review {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form-review {
+    padding-bottom: 69px;
+  }
+}
+
+.form-review__comment {
+  text-align: right;
+  margin: 0;
+  margin-top: 19px;
+}
+
+@media (max-width: $mobile-width-only) {
+  .form-review__comment {
+    display: none;
+  }
+}
+
+.form-review__item {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.form-review__item--attractions {
+  margin-top: 15px;
+}
+
+@media (max-width: $mobile-width-only) {
+  .form-review {
+    border-top: 1px solid $grey-230;
+  }
+
+  .form-review__item:not(:nth-last-child(3))::before {
+    position: absolute;
+    content: "";
+    height: 1px;
+    background-color: $grey-230;
+    bottom: 0;
+    left: -20px;
+    right: -20px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form-review__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-review__container {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
+
+.form-review__title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 19px;
+  text-align: center;
+  grid-column: 1 / -1;
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .form-review__title {
+    font-size: 21px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form-review__title--accented {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .form-review__title--accented::before,
+  .form-review__title--accented::after {
+    content: "";
+    width: 122px;
+    height: 1px;
+    background-color: $grey-230;
+  }
+
+  .form-review__title--accented::before {
+    margin-right: 10px;
+  }
+
+  .form-review__title--accented::after {
+    margin-left: 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-review__title--accented::before,
+  .form-review__title--accented::after {
+    width: 280px;
+  }
+}
+
+.form-review__button {
+  width: 100%;
+  padding-top: 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .form-review__button {
+    width: 324px;
+    padding-left: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-review__button {
+    width: 480px;
+    margin-bottom: 5px;
+  }
+}

@@ -237,20 +237,20 @@
 
 @media (min-width: $desktop-width) {
   .advantages__item--pic:first-child::after {
-    background-image: url("../img/photo-city.jpg");
+    background-image: url("../img/photo-city-desktop.jpg");
   }
 
   .advantages__item--pic:nth-child(2)::after {
-    background-image: url("../img/photo-bridge.jpg");
+    background-image: url("../img/photo-bridge-desktop.jpg");
   }
 }
 
 @media (min-width: $desktop-width) and (min-resolution: 2dppx) {
   .advantages__item--pic:first-child::after {
-    background-image: url("../img/photo-city@2x.jpg");
+    background-image: url("../img/photo-city-desktop@2x.jpg");
   }
 
   .advantages__item--pic:nth-child(2)::after {
-    background-image: url("../img/photo-bridge@2x.jpg");
+    background-image: url("../img/photo-bridge-desktop@2x.jpg");
   }
 }

@@ -1,0 +1,160 @@
+.gallery {
+  padding-top: 22px;
+  line-height: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .gallery {
+    padding-top: 12px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gallery {
+    padding-top: 22px;
+  }
+}
+
+.gallery__list {
+  list-style: none;
+  padding: 0 20px;
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .gallery__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gallery__list {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0;
+  }
+}
+
+.gallery__img {
+  width: 100%;
+  display: block;
+}
+
+.gallery__name {
+  text-transform: none;
+  margin: 0;
+}
+
+.gallery__name strong {
+  text-transform: uppercase;
+}
+
+.gallery__likes {
+  display: flex;
+  font-weight: bold;
+  width: 70px;
+}
+
+.gallery__likes svg {
+  flex-shrink: 0;
+  margin-right: 9px;
+}
+
+@media (max-width: $mobile-width-only) {
+  .gallery__likes svg {
+    margin-right: 14px;
+  }
+}
+
+.gallery__wrapper {
+  padding-top: 10px;
+}
+
+@media (min-width: $tablet-width) {
+  .gallery__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px 15px 13px 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gallery__wrapper {
+    padding: 22px 20px 15px 20px;
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+  .gallery__wrapper {
+    background-color: $grey-200;
+  }
+
+  .gallery__item:not(:first-child):nth-child(odd) {
+    .gallery__wrapper {
+      background-color: $grey-350;
+    }
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .gallery__item {
+    position: relative;
+    padding-top: 23px;
+    padding-bottom: 2px;
+  }
+
+  .gallery__item::before {
+    position: absolute;
+    content: "";
+    height: 1px;
+    background-color: $grey-230;
+    top: 0;
+    left: -20px;
+    right: -20px;
+  }
+
+  //.gallery__item:last-child {
+  //  padding-bottom: 15px;
+  //}
+
+  .gallery__item:last-child::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    background-color: $grey-230;
+    bottom: 0;
+    left: -20px;
+    right: -20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gallery__item {
+    position: relative;
+  }
+
+  .gallery__wrapper {
+    color: $white;
+    background-color: rgba($black, 0.3);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 3;
+    padding: 15px 16px 13px 20px;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .gallery__item:first-child {
+    grid-column: 1 / -1;
+  }
+}
+
+//@media (min-width: $desktop-width) {
+//  .gallery__item:first-child {
+//    grid-column: 1 / -1;
+//  }
+//}
